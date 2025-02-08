@@ -1,0 +1,370 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'Futura';
+    src: url(../FUENTES/Futura/FuturaPTCondMedium.otf);
+    font-weight: medium;
+}
+@font-face {
+    font-family: 'Open Sans';
+    src: url(../FUENTES/Open_Sans/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-weight: lighter;
+}
+@font-face {
+    font-family: 'Work Sans';
+    src: url(../FUENTES/Work_Sans/WorkSans-VariableFont_wght.ttf);
+    font-weight: lighter;
+}
+
+/* NAV */
+nav{
+    background-color: #121212;
+    padding: 15px 0px 10px;
+    width: 100%;
+    position: fixed;
+}
+.container-nav{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    margin: 0 auto;
+}
+.logo{
+    font-family: 'Futura';
+    color: #c4a46d;
+    font-size: 50px;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    place-items: center;
+}
+.nav-link{
+    color: #f8f8f8;
+    font-family: 'Work Sans';
+    font-size: 18px;
+}
+.cerrar{
+    width: 30px;
+}
+.abrir{
+    width: 30px;
+}
+.menuTo{
+    display: none;
+}
+/* HEADER */
+.espaciador{
+    height: 100px;
+}
+header{
+    background: url(../IMG/BANNER1.png);
+    width: 100%;
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.h1{
+    font-family: 'Futura';
+    font-size: 85px;
+    color: #c4a46d;
+}
+.p-banner{
+    color:#f8f8f8 ;
+    font-family: 'Open Sans';
+    font-size: 20px;
+}
+.btn-banner{
+    color: #c4a46d;
+    font-family: 'Work Sans';
+    font-size: 25px;
+    border: 1.5px solid #c4a46d;
+    padding: 5px 20px;
+    border-radius: 20px;
+}
+.btn-banner:hover{
+    background-color: #c4a46d;
+    color: #f8f8f8;
+}
+.info-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 500px;
+    width: 600px;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 75%;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+/* HISTORIA */
+.historia{
+    background-color: #040404;
+}
+.h2{
+    color: #c4a46d;
+    font-family: 'Futura';
+    font-size: 65px;
+}
+.p{
+    font-family: 'Open Sans';
+    font-size: 20px;
+    color: #f8f8f8;
+}
+.informacion{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    place-items: center;
+}
+.imagen{
+    width: 500px;
+}
+.imagen img{
+    width: 100%;
+}
+.textos{
+    width: 50%;
+}
+.espaciado-secciones{
+    height: 70px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    justify-content: center;
+    text-align: center;
+    place-items: center;
+    background-color: #360a17d0;
+    padding: 25px 15px 15px;
+    border-radius: 10px;
+    margin-top: 25px;
+}
+
+.img-card{
+    width: 450px;
+    height: 500px;
+    overflow: hidden;
+}
+.img-card img{
+    width: 100%;
+    border-radius: 30px;
+    height: 100%;
+    object-fit: cover;
+}
+.h3{
+    font-size: 55px;
+    color: #c4a46d;
+    font-family: 'Futura';
+}
+.titulo{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.artistas-invitados{
+    background: url(../IMG/ADELE-4.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.imagenes{
+    justify-content: space-between;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.texto-conciertos{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 35px;
+}
+.imagenes-concierto{
+    width: 500px;
+    filter: grayscale(100);
+    margin-top: 15px;
+}
+.imagenes-concierto:hover{
+    filter: grayscale(0);
+}
+.concierto{
+    background-color: #011712;
+}
+footer{
+    padding: 15px 0;
+    background-color: #040404;
+}
+.iconos-footer{
+    width: 35px;
+    height: 35px;
+    margin-top: 15px;
+}
+
+.redes{
+    width: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.item-link-f{
+    color: #f8f8f8;
+    font-family: 'Work Sans';
+    font-size: 19px;
+}
+.item-link-f:hover{
+    color: #c4a46d;
+
+}
+
+
+
+
+
+
+@media screen  and (max-width : 800px) {
+    header{
+        background: url(../IMG/TABLET/BANNER1T.png);
+    }
+    .container{
+        width: 90%;
+        justify-content: space-evenly;
+    }
+    .h1{
+        font-size: 55px;
+    }
+    .info-header{
+        width: 100%;
+        text-align: center;
+    }
+    .espaciador{
+        height: 220px;
+    }
+    .imagen{
+        margin: 0 auto;
+    }
+    .nav-list{
+        flex-direction: column;
+        display: none;
+    }
+    .menuTo{
+        display: flex;
+        place-content: center;
+
+    }
+    .cerrar{
+        display: none;
+    }
+    .open .nav-list{
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: #121212;
+        display: flex;
+        height: 100vh;
+        justify-content: space-evenly;
+    }
+    .open .cerrar{
+        display: block;
+    }
+    .open .abrir{
+        display: none;
+    }
+    .img-card{
+        width: 300px;
+        height: 350px;
+    }
+    .card{
+        width: 400px;
+    }
+    .h3{
+        font-size: 45px;
+    }
+    .artistas-invitados{
+        background: #000000;
+    }
+
+    .informacion{
+        width: 100%;
+    }
+    .textos{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 45px;
+    }
+    .imagenes{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+    .imagenes-concierto:target{
+        filter: grayscale(0);
+    }
+}
+@media screen and (max-width:520px) {
+    header{
+        background: url(../IMG/MOVIL/BANNER1C.png);
+    }
+    .espaciador{
+        height: 100px;
+    }
+    .h1{
+        font-size: 50px;
+    }
+    .p-banner{
+        font-size: 18px;
+    }
+    .btn-banner{
+        font-size: 15px;
+    }
+    .imagenes-concierto{
+        width: 300px;
+    }
+    .img-card{
+        width: 250px;
+        height: 300px;
+    }
+    .card{
+        width: 300px;
+    }
+    .h3{
+        font-size: 30px;
+    }
+    .h2{
+        font-size: 45px;
+    }
+    .p{
+        font-size: 15px;
+    }
+    .imagen{
+        width: 300px;
+    }
+}
+@media screen and (max-width:400px) {
+    .espaciador{
+        height: 100px;
+        
+    }
+    .h1{
+        font-size: 30px;
+    }
+    .p-banner{
+        font-size: 15px;
+    }
+    .info-header{
+        justify-content: space-evenly;
+        height: 400px;
+    }
+}
